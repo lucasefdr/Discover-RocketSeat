@@ -1,11 +1,11 @@
 /*
-    Vari·veis e tipos de dados
+    Vari√°veis e tipos de dados
 */
 
-// declaraÁ„o or declaration
+// declara√ß√£o or declaration
 var name;
 
-// atribuiÁ„o de valores or assignment
+// atribui√ß√£o de valores or assignment
 name = "Lucas";
 let age, isHuman;
 

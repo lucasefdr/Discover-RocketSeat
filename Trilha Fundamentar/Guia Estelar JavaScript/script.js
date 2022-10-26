@@ -1,45 +1,43 @@
 /*
-    Variáveis e tipos de dados
+    ExercÃ­cios
 */
 
-// declaração or declaration
-var name;
+// 1 and 2
+let weight;
+console.log(typeof weight);
 
-// atribuição de valores or assignment
+// 3
+let name, age, stars, isSubscribed;
+
 name = "Lucas";
-let age, isHuman;
-
 age = 24;
-isHuman = true;
+stars = 5.0;
+isSubscribed = true;
 
-// tipo de dado ou data type
-console.log(typeof name);
-console.log(typeof age);
-console.log(typeof isHuman);
+// 4
+let student = {};
+console.log(typeof student);
 
-console.log(name, age, isHuman);
+student = { name: "Lucas", age: 24, stars: 5.0, isSubscribed: true };
 
-// interpolando valores com template literals or template strings
-console.log(`Name: ${name}
-Age: ${age}
-isHuman? ${isHuman}`);
+console.log(`${student.name} is ${age} years old and weighs 77.5kg.`);
 
-// Object
-const person = {
-  name: "John",
-  age: 28,
-  weight: 77.8,
-  isAdmin: true,
-};
+// 5
+let students = [];
 
-console.log(`${person.name} has ${person.age} years old.`);
+// 6
+students[0] = student;
 
-// Array
-const animals = ["Lion", "Monkey", "Cat", { name: "Dog", age: 12 }];
+// 7
+console.log(students[0]);
 
-// Acessando valores no array
-console.log(animals[0]);
-console.log(animals[1]);
-console.log(animals[2]);
-console.log(animals[3].name);
-console.log(animals[3].age);
+// 8
+const John = { name: "John", age: 26, stars: 4.0, isSubscribed: true };
+
+students[1] = John;
+
+console.log(students[1]);
+
+// 9
+console.log(a);
+var a = 1;
