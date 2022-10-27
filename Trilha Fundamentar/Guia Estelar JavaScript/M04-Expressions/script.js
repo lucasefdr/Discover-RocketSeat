@@ -42,3 +42,7 @@ console.log("módulo: " + (numberOne % numberTwo));
 console.log("incremento: " + ++numberOne);
 console.log("decremento: " + --numberOne);
 console.log("exponencial: " + numberOne ** 2);
+
+// grouping operator ()
+let total = (2 + 3) * 5;
+console.log(total);
