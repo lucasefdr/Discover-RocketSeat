@@ -17,3 +17,13 @@ console.log(word.length);
 let numberOne = 534.31635223;
 console.log(Number(numberOne.toFixed(2)));
 console.log(numberOne.toFixed(2).replace(".", ","));
+
+// maiúsculas e minúsculas
+let newWord = "JavaScript is very easy";
+console.log(newWord.toLowerCase());
+console.log(newWord.toUpperCase());
+
+// split e join
+let text = "Today is very hot";
+console.log(text.split(" "));
+console.log(text.split(" ").join("_"));
