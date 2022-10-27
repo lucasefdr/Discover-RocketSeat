@@ -1,13 +1,19 @@
 /*
 
-  Type conversion (typecasting) vs Type coersion (implicit casting)
-
-  -> Conversão de dados
+  Manipulando Strings e Números
 
 */
 
-// type coersion 5 to string
-console.log("9" + 5);
+let string = "123";
+console.log(Number(string));
+let number = 321;
+console.log(String(number));
 
-// type conversion 9 to number
-console.log(Number("9") + 5);
+// tamanho da palavra - length
+let word = "Tracejado";
+console.log(word.length);
+
+// quebrar casas decimais e trocar ponto por vírgula
+let numberOne = 534.31635223;
+console.log(Number(numberOne.toFixed(2)));
+console.log(numberOne.toFixed(2).replace(".", ","));
