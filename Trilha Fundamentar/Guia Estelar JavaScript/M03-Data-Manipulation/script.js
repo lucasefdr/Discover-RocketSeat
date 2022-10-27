@@ -23,7 +23,8 @@ let newWord = "JavaScript is very easy";
 console.log(newWord.toLowerCase());
 console.log(newWord.toUpperCase());
 
-// split e join
+// split, join e includes
 let text = "Today is very hot";
 console.log(text.split(" "));
 console.log(text.split(" ").join("_"));
+console.log(text.includes("very"));
