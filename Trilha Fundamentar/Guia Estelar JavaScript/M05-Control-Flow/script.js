@@ -1,18 +1,16 @@
-// switch
-let expression = "a";
+// throw -> lançar
+function sayMyName(name = "") {
+  if (name === "") throw "error message";
 
-switch (expression) {
-  case "a":
-    console.log("a");
-    break;
-  case "b":
-    console.log("b");
-    break;
-  case "c":
-    console.log("c");
-    break;
-
-  default:
-    console.log("default");
-    break;
+  // se der erro, não irá retornar
+  console.log("after error");
 }
+
+// try...catch -> tentar...capturar
+try {
+  sayMyName();
+} catch (error) {
+  console.log(error);
+}
+
+console.log("after try...catch");
