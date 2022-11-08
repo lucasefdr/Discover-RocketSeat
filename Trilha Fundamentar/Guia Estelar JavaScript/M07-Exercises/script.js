@@ -1,36 +1,35 @@
 /*
-  Exercício 2 - Sistema de gastos familiar
+  Exercício 3 - Celsius em Fahrenheit
 */
 
-let family = {
-  incomes: [2000, 3000, 100],
-  expenses: [1000, 320, 500],
-};
+let celsius;
+let fahrenheit;
 
-function sum(array) {
-  let total = 0;
+function transformDegree(degree) {
+  const celsiusExists = degree.toUpperCase().includes("C");
+  const fahrenheitExists = degree.toUpperCase().includes("F");
 
-  for (let element of array) {
-    total += element;
+  if (!celsiusExists && !fahrenheitExists) {
+    throw new Error("Grau não identificado");
   }
 
-  return total;
-}
+  // fluxo ideal F -> C
+  let updatedDegree = Number(degree.toUpperCase().replace("F", ""));
+  let formula = (fahrenheit) => ((fahrenheit - 32) * 5) / 9;
+  let degreeSign = "C";
 
-function calculateExpenses() {
-  const calculateIncomes = sum(family.incomes);
-  const calculateExpenses = sum(family.expenses);
-
-  const total = calculateIncomes - calculateExpenses;
-
-  const itsOk = total >= 0;
-  let balanceText = "negative";
-
-  if (itsOk) {
-    balanceText = "positive";
+  // fluxo alternativo
+  if (celsiusExists) {
+    updatedDegree = Number(degree.toUpperCase().replace("C", ""));
+    formula = (celsius) => (celsius * 9) / 5 + 32;
+    degreeSign = "F";
   }
 
-  console.log(`Your balance is ${balanceText}: R$ ${total.toFixed(2)}`);
+  return formula(updatedDegree).toFixed(2) + degreeSign;
 }
 
-calculateExpenses();
+try {
+  console.log(transformDegree("10C"));
+} catch (error) {
+  console.log(error.message);
+}
