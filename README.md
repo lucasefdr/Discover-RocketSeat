@@ -28,3 +28,4 @@
 - [x]  **Content manipulation:** *textContent, innerText, innerHTML, value*
 - [x]  **Attributes manipulation:** *setAttribute, removeAttribute, getAttribute*
 - [x]  **Styles manipulation:** *classList.add, classList.remove, classList.toggle*
+- [x] **Navigating the elements:** *parentNode, children, childNodes, firstChild, lastChild*  
