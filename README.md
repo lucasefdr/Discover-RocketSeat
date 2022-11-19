@@ -1,7 +1,7 @@
 # Discover - RocketSeat
 
-- Project created to study HTML, CSS, JavaScript
-- [Discover](https://app.rocketseat.com.br/discover)
+- Project created to study **HTML, CSS, JavaScript**
+- [Discover - RocketSeat](https://app.rocketseat.com.br/discover)
 
 ## Topics
 

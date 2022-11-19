@@ -2,6 +2,7 @@
 // style
 const bodyElement = document.querySelector("body");
 
+// alterando estilo 
 // bodyElement.style.backgroundColor = "#f9f3d2";
 // console.log(bodyElement.style.backgroundColor);
 
