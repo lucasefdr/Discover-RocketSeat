@@ -1,19 +1,22 @@
-// Criando e adicionando elementos
+// Eventos
+const print = () => console.log("print");
 
-// createElement -> criando elementos
-const div = document.createElement("div");
-div.innerHTML = "<h1>Hello, world!</h1>";
+// Eventos do teclado
+const input = document.querySelector("input");
 
-const p = document.createElement("p");
-p.innerHTML = "<strong>lorem ipsum paragraph</strong>";
+// input.onkeyup = function () {
+//   console.log("key up");
+// };
 
-// append prepend -> adiciona no HTML
-const body = document.querySelector("body");
-const header = document.querySelector("header");
+// input.onkeydown = () => console.log("key down");
 
-body.prepend(div);
-body.append(p);
+// addEventListener(event, function) -> 'ouvidor' de eventos
+const h1 = document.querySelector("h1");
+h1.addEventListener("click", () => console.log("click on h1"));
+h1.addEventListener("mouseover", () => console.log("mouse over on h1"));
 
-// insertBefore(firstElement, lastElement)
-const pHeader = header.querySelector("p");
-header.insertBefore(div, pHeader.nextElementSibling);
+// argumento event
+input.onmouseover = (event) => console.log(event);
+input.onkeyup = (event) => console.log(event.key);
+input.onkeydown = (event) => console.log(event.currentTarget)
+input.onkeydown = (event) => console.log(event.currentTarget.value)
