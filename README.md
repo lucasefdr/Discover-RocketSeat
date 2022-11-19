@@ -24,4 +24,5 @@
 
 ### JavaScript - DOM: Document Object Model
 - [x]  **What's DOM?**
-- [ ]  
+- [ ]  **Selectors:** *getElementsById, getElementsByClassName, getElementsByTagName, querySelector, querySelectorAll*
+- [ ]  **Content manipulation:** *textContent, innerText, innerHTML, value*
