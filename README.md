@@ -1,4 +1,4 @@
-# Java Object-Oriented Programming
+# Discover - RocketSeat
 
 - Project created to study HTML, CSS, JavaScript, NodeJS...
 -  [Discover](https://app.rocketseat.com.br/discover).
