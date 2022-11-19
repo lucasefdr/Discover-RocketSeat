@@ -1,14 +1,14 @@
-// getElementById() -> pegando o elemento HTML pelo ID
-const element = document.getElementById("blog-title");
-console.log(element);
+// Manipulando conteúdo
+// textContent
+const element = document.querySelector("h1");
+element.textContent = "Manipulando com textContent";
 
-// getElementsByClassName -> pegando os elementos pela classe
-const elements = document.getElementsByClassName("class-name");
-console.log(elements[0]);
-console.log(elements[1]);
+console.log(element.textContent);
 
-// getElementsByTagName -> pegando os elementos pela tag
-const elementsByTag = document.getElementsByTagName("meta");
-console.log(elementsByTag[0]);
-console.log(elementsByTag[1]);
-console.log(elementsByTag[2]);
+const elementsP = document.querySelectorAll("p");
+
+elementsP[0].innerText = "innerText";
+elementsP[1].innerHTML = "<strong>innerHTML<strong>";
+
+console.log(elementsP[0])
+console.log(elementsP[1])
