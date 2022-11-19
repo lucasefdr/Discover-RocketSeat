@@ -23,3 +23,5 @@
 - [x]  **Repetition structure:** *for, break, continue, while, for of, for in*
 
 ### JavaScript - DOM: Document Object Model
+- [x]  **What's DOM?**
+- [ ]  
