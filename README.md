@@ -29,4 +29,4 @@
 - [x]  **Attributes manipulation:** *setAttribute, removeAttribute, getAttribute*
 - [x]  **Styles manipulation:** *classList.add, classList.remove, classList.toggle*
 - [x]  **Navigating the elements:** *parentNode, children, childNodes, firstChild, lastChild*  
-- [ ]  **Events**: *addEventListener, events*
+- [x]  **Events**: *addEventListener, events*
